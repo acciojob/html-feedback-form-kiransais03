@@ -11,16 +11,13 @@
     <script type="text/javascript" src="./script.js">
 </script>
 	<h1>Feedback Form</h1>
-	<form>
+	<form method="get">
 	<label for="name">Name</label>
 	<input id="name"  required name="name" type="text" minlength="3" maxlength="50">
 	<label for="portfolio">Portfolio</label>
 	<input type="url" id="portfolio" name="portfolio" required>
 	<label for="favColor">Favourite Colour</label>
-	<select id="favColor">
-		<option value="red">Red</option>
-		<option value="yellow">Yellow</option>
-	</select>
+	<input type="color" id="favColor" name="favColor">
 	<label for="likeness">Likeness</label>
 	<input id="likeness" type="range" name="likeness" min="1" max="100">
 	<button type="submit" value="Submit">Submit</button>
